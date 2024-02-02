@@ -1,5 +1,6 @@
 //import java.util.Random;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class myFirstMiniProject_V1 {
@@ -10,7 +11,8 @@ public class myFirstMiniProject_V1 {
         
         System.out.println("当籤" + firstPickMember);
 
-        List<String> remainMember = new ArrayList<>();
+        List<String> remainMember = Arrays.asList(firstPickMember);
+        remainMember.remove(firstPickMember);
     }
 
     private static String firstPick(String[] name) {
