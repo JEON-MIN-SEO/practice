@@ -11,8 +11,10 @@ public class myFirstMiniProject_V1 {
         
         System.out.println("当籤" + firstPickMember);
 
-        List<String> remainMember = Arrays.asList(firstPickMember);
+        List<String> remainMember = new ArrayList<>(Arrays.asList(name));
         remainMember.remove(firstPickMember);
+
+        System.out.println("남은 멤버: " + remainMember);
     }
 
     private static String firstPick(String[] name) {
